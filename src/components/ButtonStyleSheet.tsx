@@ -2,6 +2,7 @@ import React, { useState, forwardRef } from 'react';
 import { TouchableOpacity, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {ButtonProps} from "../Interface/ButtonProps";
+import colores from '../colores.json'
 
 const Button = forwardRef<TouchableOpacity, ButtonProps>(({
                                text,
@@ -44,15 +45,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        backgroundColor: '#007bff',
-        borderRadius: 4,
+        backgroundColor: colores[".text-amber-500\\/80-color"],
+        color: '#000000'
     },
     buttonDisabled: {
         backgroundColor: '#ccc',
     },
     text: {
-        color: '#fff',
         fontSize: 16,
+        borderWidth: 2,
+        borderColor: colores[".border-amber-100-border-color"]
     },
     icon: {
         marginRight: 8,
