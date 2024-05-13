@@ -1,8 +1,9 @@
 import React, { useState, forwardRef } from 'react';
 import { TouchableOpacity, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import {ButtonProps} from "../Interface/ButtonProps";
 
-const Button = forwardRef(({
+const Button = forwardRef<TouchableOpacity, ButtonProps>(({
                                text,
                                onClick,
                                icon,
@@ -43,11 +44,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        backgroundColor: '#007bff',  // Blue button
+        backgroundColor: '#007bff',
         borderRadius: 4,
     },
     buttonDisabled: {
-        backgroundColor: '#ccc',  // Grey button when disabled
+        backgroundColor: '#ccc',
     },
     text: {
         color: '#fff',

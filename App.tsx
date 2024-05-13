@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {Alert, StyleSheet, Text, View} from 'react-native';
+import Button from "./src/components/ButtonStyleSheet";
+import SearchInput from "./src/components/SearchInput";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Me muero</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const App: React.FC = () => {
+    const handlePressStyleSheet = async () => {
+        Alert.alert('Stylesheet');
+    };
+
+    const handlePressStyled = async () => {
+        Alert.alert('Styled components');
+    };
+
+    return (<View style={styles.container}>
+        <SearchInput></SearchInput>
+
+            <Button
+                text="Nuevo cobro"
+                onClick={handlePressStyleSheet}
+                icon="plus"
+                iconPosition="start"
+                disabled={false}
+            />
+            <Text style={styles.heading}>Botón Styled Components</Text>
+        </View>);
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff',
+    }, heading: {
+        fontSize: 24, marginBottom: 20,
+    },
 });
+
+export default App;
