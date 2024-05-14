@@ -3,6 +3,7 @@ import { TouchableOpacity, Text, View, ActivityIndicator, StyleSheet } from 'rea
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {ButtonProps} from "../Interface/ButtonProps";
 import colores from '../colores.json'
+import {colors} from "../colors";
 
 const Button = forwardRef<TouchableOpacity, ButtonProps>(({
                                text,
@@ -45,16 +46,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        backgroundColor: colores[".text-amber-500\\/80-color"],
-        color: '#000000'
+        backgroundColor: colors.amber["500"],
     },
     buttonDisabled: {
         backgroundColor: '#ccc',
     },
     text: {
         fontSize: 16,
-        borderWidth: 2,
-        borderColor: colores[".border-amber-100-border-color"]
     },
     icon: {
         marginRight: 8,
