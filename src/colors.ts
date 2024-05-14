@@ -1,4 +1,4 @@
-export const color = {
+export const colors = {
     archivex: {
         50: "#E0F3FF",
         100: "#BDE6FF",
@@ -318,4 +318,10 @@ export const color = {
         900: '#881337',
         950: '#4c0519',
     },
+}
+
+export const defaultColor = 'orange'
+
+export const color = (tono: number) => {
+    return colors[defaultColor][tono]
 }

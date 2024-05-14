@@ -2,7 +2,7 @@ import React, { useState, forwardRef } from 'react';
 import { TouchableOpacity, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {ButtonProps} from "../Interface/ButtonProps";
-import {color} from "../color";
+import {color} from "../colors";
 
 const Button = forwardRef<TouchableOpacity, ButtonProps>(({
                                text,
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        backgroundColor: color.["500"]
+        backgroundColor: color(500)
     },
     buttonDisabled: {
         backgroundColor: '#ccc',
