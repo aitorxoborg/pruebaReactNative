@@ -2,8 +2,7 @@ import React, { useState, forwardRef } from 'react';
 import { TouchableOpacity, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {ButtonProps} from "../Interface/ButtonProps";
-import colores from '../colores.json'
-import {color, colors} from "../color";
+import {color} from "../color";
 
 const Button = forwardRef<TouchableOpacity, ButtonProps>(({
                                text,
