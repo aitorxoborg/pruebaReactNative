@@ -1,4 +1,4 @@
-export const colors = {
+export const color = {
     archivex: {
         50: "#E0F3FF",
         100: "#BDE6FF",
