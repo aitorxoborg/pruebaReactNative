@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
-        backgroundColor: colors.amber["500"],
+        backgroundColor: colors.,
     },
     buttonDisabled: {
         backgroundColor: '#ccc',
