@@ -1,4 +1,4 @@
-export const colors = {
+const colors = {
     archivex: {
         50: "#E0F3FF",
         100: "#BDE6FF",
@@ -320,7 +320,7 @@ export const colors = {
     },
 }
 
-export const defaultColor = 'purple'
+export const defaultColor = 'pink'
 
 export const color = colors[defaultColor];
 
