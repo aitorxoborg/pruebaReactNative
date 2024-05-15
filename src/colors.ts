@@ -320,8 +320,12 @@ export const colors = {
     },
 }
 
-export const defaultColor = 'orange'
+export const defaultColor = 'purple'
 
+export const color = colors[defaultColor];
+
+
+/*
 export const color = (tono: number) => {
     return colors[defaultColor][tono]
-}
+} */
